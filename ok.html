@@ -3,220 +3,9 @@
 
 <head>
 <meta charset="utf-8" />
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link href="main.css" rel="stylesheet">
 
-<style>
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-
-
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-body{
-    color:white;
-    background-color: darkgrey;
-    font-weight:  normal;
-    font-family: sans-serif;
-}
-
-.row{
-    clear:both;
-    text-align: center;
-    vertical-align: middle;
-    padding:1;
-		height: 50px;
-}
-.right{
-    color:white;
-    font-weight:  normal;
-    font-family: sans-serif;
-    padding: 10px;
-    background-color: rgb(57, 69, 87);
-    margin:0;
-    text-align: center;
-		height: 32px;
-
-}
-
-.left{
-    color:white;
-    font-weight:  normal;
-    font-family: sans-serif;
-    padding: 22px 11px 11px 11px;
-    background-color: black;
-    margin:0;
-    text-align: center;
-    width: 50px;
-    float: left;
-    font-size: 2rem;
-
-}
-.left-after{
-    color:white;
-
-    padding: 10px;
-    background-color: grey;
-    margin:0;
-    text-align: center;
-    width: 50px;
-    float: left;
-    font-size: 2rem;
-
-}
-
-
-.right:hover {
-
-
-    background-color: lightgrey;
-    color:black;
-}
-
-.row:hover .row-hidden{
-    display: block;
-
-}
-
-.rowhidden{
-    display: none;
-    clear:both;
-    text-align: center;
-    vertical-align: middle;
-    padding-left:142;
-    background-color: black;
-    color: black;
-}
-
-
-
-
-/* DivTable.com */
-.divTable{
-	display: table;
-	width: 100%;
-}
-.divTableRow {
-	display: table-row;
-}
-.divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
-}
-.divTableCell, .divTableHead {
-	border-bottom:  1px solid #999999;
-	display: table-cell;
-	padding: 3px 10px;
-
-}
-
-.first{
-	text-align: center;
-	background-color: black;
-	width: 50px;
-	height: 50px;
-	font-size: 2rem;
-	padding: 18px 11px 4px 11px;
-}
-
-.second{
-	text-align: center;
-	background-color: grey;
-	width: 50px;
-	height: 50px;
-	font-size: 2rem;
-}
-
-.third{
-	background-color: rgb(57, 69, 87);
-	padding-bottom: 20px;
-}
-
-.third:hover .third.hidden{
-    display: block;
-		background-color: lightgrey;
-    color: white;
-}
-.third:hover span{
-    display: none;
-		background-color: lightgrey;
-}
-
-.third:hover {
-	background-color: lightgrey;
-}
-
-.third:hover .third.hidden{
-    display: block;
-    color: rgb(57, 69, 87);
-}
-
-.hidden{
-	color: white;
-	padding:0;
-	margin:0;
-	display:none;
-	border: none;
-}
-
-.divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
-	font-weight: bold;
-}
-.divTableFoot {
-	background-color: #EEE;
-	display: table-footer-group;
-	font-weight: bold;
-}
-.divTableBody {
-	display: table-row-group;
-}
-
-</style>
 </head>
 
 <body>
@@ -229,13 +18,13 @@ body{
     constructor()
     {
       this.content = [
-          'Mon premier test !',
-          'Une autre phrase !',
+          'First item !',
+          'Second item !',
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-          "J'en ajoute une !",
+          "Fouth item !",
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ",
-          "J'en ajoute une !",
-          "Nouvel item !",
+          "Another item !",
+          "The las item !",
       ]
     }
 
@@ -246,19 +35,12 @@ body{
 			html += '<div class="divTableBody">'
       for (var i=0; i < this.content.length ;i++)
       {
-
-
-
 				html += '<div class="divTableRow">'
 				html += '<div class="divTableCell first">&#10048;</div>'
 				html += '<div class="divTableCell second">&#9635;</div>'
 				html += '<div class="divTableCell third"><span>&#8618; '+this.trunc(this.content[i], 50)+'</span>'
 				html += '<div class="divTableCell third hidden">&#8618; '+this.content[i]+'</div></div>'
 				html += '</div>'
-
-
-
-
       }
 			html += '</div>'
 			html += '</div>'
@@ -269,13 +51,38 @@ body{
     {
       return str.length > limit ? str.substring(0,50) + ' ...' : str
     }
-
-
   }
   const r = new Render()
   r.display()
+
+ 	var toggle = 0
+
+
+
+
+	$('.second').on( "click", function( event ) {
+		$('span').show()
+		$('.hidden').hide()
+
+		if ($( event.target ).parent().find('.hidden').hasClass('lg'))
+		{
+			$( '.lg').removeClass('lg')
+			$( event.target ).parent().find('.hidden').parent().removeClass('lg')
+			$( event.target ).parent().find('.hidden').removeClass('lg')
+			$( event.target ).parent().find('.hidden').hide()
+			$( event.target ).parent().find('span').show()
+		}
+		else {
+			$( '.lg').removeClass('lg')
+			$( event.target ).parent().find('.hidden').parent().addClass('lg')
+			$( event.target ).parent().find('.hidden').addClass('lg')
+			$( event.target ).parent().find('.hidden').show()
+			$( event.target ).parent().find('span').hide()
+		}
+});
+
+
+
 </script>
-
 </body>
-
 </html>
